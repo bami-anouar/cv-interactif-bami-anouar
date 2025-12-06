@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anouar Bami - CV Interactif</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers votre fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="text-white p-3" aria-label="Navigation principale">
+        <div class="mb-4">
+            <span class="h4 m-0 fw-bold">Menu</span>
+        </div>
+
+        <ul class="nav flex-column gap-2">
+            <li class="nav-item"><a class="nav-link text-white" href="#accueil"><i class="fas fa-home me-3" aria-hidden="true"></i> Accueil</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#formation"><i class="fas fa-graduation-cap me-3" aria-hidden="true"></i> Formation</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#competences"><i class="fas fa-laptop-code me-3" aria-hidden="true"></i> Compétences</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#experiences"><i class="fas fa-briefcase me-3" aria-hidden="true"></i> Expériences</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#interets"><i class="fas fa-heart me-3" aria-hidden="true"></i> Centres d’intérêt</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact"><i class="fas fa-paper-plane me-3" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 position-relative">
+
+        <!-- Toggle Buttons -->
+        <button id="toggleSidebarBtn" class="floating-btn btn btn-primary shadow" aria-controls="sidebar" aria-expanded="false" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <button id="darkModeBtn" class="floating-btn btn btn-dark shadow" aria-pressed="false" aria-label="Activer le mode sombre">
+            🌙
+        </button>
+
+        <!-- Header/Hero -->
+        <header id="accueil" class="text-center">
+            <div class="container">
+                <img src="https://img.freepik.com/premium-vector/student-graduated-avatar-isolated-vector-illustration-design_24877-15467.jpg?w=740" alt="Photo de profil d'Anouar Bami" class="profile-pic rounded-circle mb-4">
+                <h1 class="display-4 mb-2 fw-bold">Anouar Bami</h1>
+                <p class="lead mb-4">Développeur Web Junior <span class="text-primary fw-bold">|</span> Passionné de Tech</p>
+                <a href="#contact" class="btn btn-primary btn-lg px-5 rounded-pill py-3 fw-semibold shadow-sm">Me Contacter <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </header>
+
+        <!-- Formation Section -->
+        <section id="formation" class="bg-light section-bg py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase section-title">Formation</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 p-4 text-center">
+                            <div class="card-body">
+                                <i class="fas fa-university fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title mb-3">DEUG Informatique Appliquée</h4>
+                                <h6 class="card-subtitle mb-3 text-primary fw-bold">FSSM - Marrakech</h6>
+                                <p class="card-text text-muted mb-0"><i class="far fa-calendar-alt me-2"></i> 2024 - Présent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 p-4 text-center">
+                            <div class="card-body">
+                                <i class="fas fa-certificate fa-3x text-success mb-3"></i>
+                                <h4 class="card-title mb-3">Baccalauréat Sciences Physiques</h4>
+                                <h6 class="card-subtitle mb-3 text-success fw-bold">Lycée Mohammed 6</h6>
+                                <p class="card-text text-muted mb-0"><i class="fas fa-check-circle me-2"></i> Obtenu en 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences Section -->
+        <section id="competences" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase section-title">Compétences Techniques</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="mb-4">
+    <div class="d-flex justify-content-between mb-2 fw-medium">
+        <span><i class="fab fa-html5 text-danger me-2"></i> HTML5 / <i class="fab fa-css3-alt text-primary me-2"></i> CSS3</span>
+        <span>80%</span> </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%; background: linear-gradient(to right, #dc3545, #fd7e14);"></div>
+    </div>
+</div>
+
+<div class="mb-4">
+    <div class="d-flex justify-content-between mb-2 fw-medium">
+        <span><i class="fab fa-js-square text-warning me-2"></i> JavaScript (ES6+)</span>
+        <span>60%</span> </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%; background: linear-gradient(to right, #ffc107, #ffca2c);"></div>
+    </div>
+</div>
+
+<div class="mb-4">
+    <div class="d-flex justify-content-between mb-2 fw-medium">
+        <span><i class="fab fa-bootstrap text-purple me-2" style="color: #6610f2;"></i> Bootstrap 5</span>
+        <span>75%</span> </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%; background: linear-gradient(to right, #6610f2, #0d6efd);"></div>
+    </div>
+</div>
+
+<div class="mb-4">
+    <div class="d-flex justify-content-between mb-2 fw-medium">
+        <span><i class="fab fa-git-alt text-danger me-2"></i> Git & GitHub</span>
+        <span>50%</span> </div>
+    <div class="progress">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 50%; background: linear-gradient(to right, #343a40, #6c757d);"></div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences Section (TIMELINE VIEW) -->
+        <section id="experiences" class="bg-light section-bg py-5">
+            <div class="container">
+                 <div class="text-center mb-5">
+                    <h2 class="text-uppercase section-title">Expériences Professionnelles</h2>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="timeline">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="d-flex justify-content-between mb-2 align-items-center flex-wrap">
+                                        <h5 class="mb-0 fw-bold text-primary">Développeur Front-End Junior</h5>
+                                            <span class="badge bg-primary rounded-pill px-3 py-2">
+                                                <i class="far fa-calendar-alt me-1"></i> Projet Académique
+                                             </span>
+                                    </div>
+                                        <h6 class="text-muted fst-italic mb-3">Projet de fin de module</h6>
+                                            <p class="mb-0">
+                                            Conception et développement d'un site web responsive complet.
+                                            Création de l'architecture graphique, intégration HTML5/CSS3 (Bootstrap) 
+                                            et développement de fonctionnalités interactives en JavaScript.
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d’intérêt Section -->
+        <section id="interets" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase section-title">Centres d’intérêt</h2>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Programmation</h5>
+                            <p class="text-muted">Création de mini-projets et exploration de nouvelles technologies web.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center">
+                            <i class="fas fa-gamepad fa-3x text-warning mb-3"></i>
+                            <h5 class="fw-bold">Jeux vidéo</h5>
+                            <p class="text-muted">FPS et jeux compétitifs , analyse de gameplay.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center">
+                            <i class="fas fa-music fa-3x text-danger mb-3"></i>
+                            <h5 class="fw-bold">Musique</h5>
+                            <p class="text-muted">Beatmaking et montage sonore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container text-center">
+                 <div class="text-center mb-5">
+                    <h2 class="text-uppercase section-title">Me Contacter</h2>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100 py-5 px-4">
+                            <div class="card-body">
+                                <i class="fab fa-whatsapp fa-4x text-success mb-4 contact-icon"></i>
+                                <h4 class="card-title fw-bold">WhatsApp</h4>
+                                <p class="card-text fs-5 mt-3 text-muted">+212 7 11 77 11 77</p>
+                                <a href="https://wa.me/212711771177" target="_blank" class="btn btn-outline-success rounded-pill mt-3 px-4">Envoyer un message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100 py-5 px-4">
+                            <div class="card-body">
+                                <i class="fas fa-envelope fa-4x text-danger mb-4 contact-icon"></i>
+                                <h4 class="card-title fw-bold">Email</h4>
+                                <p class="card-text fs-5 mt-3 text-muted text-break">anouar.bami@gmail.com</p>
+                                <a href="mailto:anouar.bami@gmail.com" class="btn btn-outline-danger rounded-pill mt-3 px-4">M'écrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        <footer class="bg-dark text-white text-center py-4 fw-light">
+            <div class="container">
+                <p class="mb-1">&copy; 2025 Anouar Bami. Tous droits réservés.</p>
+                <small class="text-white-50">Designé et développé avec passion <i class="fas fa-heart text-danger mx-1"></i></small>
+            </div>
+        </footer>
+
+    </div> <!-- End of Main Content -->
+
+</div> <!-- End of Wrapper -->
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Lien vers votre fichier JS externe -->
+<script src="script.js"></script>
+</body>
+</html>
